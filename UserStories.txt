@@ -1,0 +1,23 @@
+User Stories
+Admin
+I'm Susan, an admin at our T-shirt company, and I need to log in securely to manage the roles of my team members. It's crucial for me to ensure that employees only have access to the features they need. For example, I want to be able to add new T-shirt designs to the system, but John, who works in the warehouse, should only be able to view the inventory. I need the system to help me assign roles so that the right people have the right level of access, ensuring our data and products are secure.
+
+Employee
+I'm John, an employee here at the T-shirt company, and I handle stock management. When new shipments of T-shirts arrive, I need to update the inventory right away to keep everything accurate. For example, when we receive 100 new T-shirts, I should be able to log in, find the product in the system, and update the stock levels so we can track what’s available. But I don’t need the ability to add new products—Susan handles that as the admin. I just need a simple way to keep the inventory up to date as we sell or restock
+
+Customer
+I'm Sarah, a loyal customer of this T-shirt company, and I love being able to track my orders. I just placed an order for 10 custom T-shirts, and I want to know exactly where my order is in the process. The system allows me to check the status, so I can see when my order is 'Pending,' 'Shipped,' and eventually 'Delivered.' It gives me peace of mind to know when I’ll receive my shirts, and if there are any delays, I can reach out for updates.
+
+Admin
+I’m Emily, I am an admin here at our T-shirt company, I need to be able to access the system in order to manage orders and oversee bulk orders. It is important that the production team can only view relevant information while I have the ability to modify supplier agreements. This ensures operations run smoothly and there is a good security plan. 
+
+Employee
+I’m Jessica, I am the production employee here at our T-shirt company, and I am responsible for tracking all the material that we use in our manufacturing process. When we receive new shipments, for example 500 yards of cotton fabric, I am responsible for updating the system to show that the inventory is stocked and that the production can begin. I am not responsible for the supplier contracts, I am just responsible for the materials so I am able to keep the production moving. 
+
+Customer
+I’m Mike, I am a customer of this T-shirt company, and I would like to stay informed about my order and constantly receive updates about my order. I recently placed an order for 20 shirts and I want to be able to check the status of my shirts as it moves through production. This system allows me to see if my order is being printed or being prepared to ship and I have an idea of how long until I receive my order. 
+Human Resources Employee 
+I'm Chris, a Human Resources Employee here at our T-shirt company, and I handle human resources. When employees want to know how much money they are going to make as the company grows, I need to be able to have access to the data for sales and company growth. For example, if our top employee has not gotten a raise in six months, I should be able to view total sales, company growth for the year, and his or her salary, and be able to communicate with Susan or Emily about a potential raise for this employee. 
+
+Warehouse Manager
+I'm Nick, a Warehouse Manager here at the T-shirt company, and I ensure warehouse orders are ready and shipped on time. In order for me to complete these tasks, I must have access to all order information, as well as inventory information. I rely heavily on Jessica, who updates the inventory as we receive it, and I am able to speak to her directly in order to ensure customer orders can be completed within our deadline.
