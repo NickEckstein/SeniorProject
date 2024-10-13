@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("users-modal");
     const modalContent = document.getElementById("modal-content");
     const userFormContainer = document.getElementById("addUser-form-container");
-    const addUserBtn = document.getElementById("addUser-product-btn");
+    const addUserBtn = document.getElementById("addUser-btn");
     const userForm = document.getElementById("user-form");
     const closeModalBtn = document.getElementById("close-modal");
 
