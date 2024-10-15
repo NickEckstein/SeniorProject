@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Page</title>
+    <link rel="stylesheet" href="../css/inventory.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Admin Menu</h2>
+      <a href="main_menu_admin.html" class="active"
+        ><i class="fas fa-home"></i> Home</a
+      >
+      <a href="users.html"><i class="fas fa-user"></i> Customers</a>
+      <a href="inventory.html"><i class="fas fa-box"></i> Inventory</a>
+      <a href="orders.html"><i class="fas fa-shopping-cart"></i> Orders</a>
+      <a href="employees.html"><i class="fas fa-users"></i> Employees</a>
+      <a href="sales-report.html"
+        ><i class="fas fa-chart-line"></i> Sales Report</a
+      >
+      <a href="account-info.html"
+        ><i class="fas fa-cog"></i> Account Information</a
+      >
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+      <h1>Inventory</h1>
+      <button id="add-product-btn" class="add-product-btn">Add Product</button>
+
+      <div id="inventory-container"></div>
+
+      <!-- Modal for Product Details -->
+      <div id="product-modal" class="modal">
+        <span id="close-modal">&times;</span>
+        <div id="modal-content"></div>
+      </div>
+
+      <!-- Overlay for Product Modal -->
+      <div id="modal-overlay" class="modal-overlay"></div>
+
+      <!-- Modal for Add Product Form -->
+      <div id="add-product-modal" class="modal">
+        <span id="close-add-product-modal">&times;</span>
+        <div id="add-product-modal-content">
+          <h2>Add New Inventory Item</h2>
+          <form id="inventory-form">
+            <label for="categoryName">Category:</label>
+            <select id="categoryName" name="categoryName" required>
+              <option value="t_shirts">T-Shirts</option>
+              <option value="graphic_t_shirts">Graphic T-Shirts</option>
+              <option value="plain_t_shirts">Plain T-Shirts</option>
+              <option value="hoodies_sweatshirts">Hoodies & Sweatshirts</option>
+              <option value="accessories">Accessories</option>
+            </select>
+            <br />
+
+            <label for="productName">Product Name:</label>
+            <input
+              type="text"
+              id="productName"
+              name="productName"
+              required
+            /><br />
+
+            <label for="productDescription">Product Description:</label>
+            <input
+              type="text"
+              id="productDescription"
+              name="productDescription"
+              required
+            /><br />
+
+            <label for="unitPrice">Unit Price:</label>
+            <input
+              type="number"
+              id="unitPrice"
+              name="unitPrice"
+              required
+            /><br />
+
+            <label for="stockQuantity">Stock Quantity:</label>
+            <input
+              type="number"
+              id="stockQuantity"
+              name="stockQuantity"
+              required
+            /><br />
+
+            <label for="restockThreshold">Restock Threshold:</label>
+            <input
+              type="number"
+              id="restockThreshold"
+              name="restockThreshold"
+            /><br />
+
+            <label for="restockQuantity">Restock Quantity:</label>
+            <input
+              type="number"
+              id="restockQuantity"
+              name="restockQuantity"
+            /><br />
+
+            <label for="imageUrl">Image URL:</label>
+            <input type="text" id="imageUrl" name="imageUrl" /><br />
+
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color" /><br />
+
+            <button type="submit">Add to Inventory</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Overlay for Add Product Modal -->
+      <div id="add-product-modal-overlay" class="modal-overlay"></div>
+
+      <script src="../js/inventory.js"></script>
+    </div>
+  </body>
+</html>
