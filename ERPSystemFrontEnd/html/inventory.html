@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Page</title>
+    <link rel="stylesheet" href="../css/employee_functions.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Admin Menu</h2>
+      <a href="main_menu_admin.html" class="active"
+        ><i class="fas fa-home"></i> Home</a
+      >
+      <a href="users.html"><i class="fas fa-user"></i> Customers</a>
+      <a href="inventory.html"><i class="fas fa-box"></i> Inventory</a>
+      <a href="orders.html"><i class="fas fa-shopping-cart"></i> Orders</a>
+      <a href="employees.html"><i class="fas fa-users"></i> Employees</a>
+      <a href="sales-report.html"
+        ><i class="fas fa-chart-line"></i> Sales Report</a
+      >
+      <a href="account-info.html"
+        ><i class="fas fa-cog"></i> Account Information</a
+      >
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+      <!-- Header -->
+      <h1>Inventory</h1>
+      <button id="add-new-btn">Add Product</button>
+
+      <!-- Render table -->
+      <div id="table-container"></div>
+
+      <!-- Modal for Displaying Product Details -->
+      <div id="product-modal" class="modal">
+        <span id="close-productDetail-modal" class="close-modal-btn"
+          >&times;</span
+        >
+        <div id="modal-content"></div>
+      </div>
+
+      <!-- darken background when viewing product  -->
+      <div id="modal-overlay" class="modal-overlay"></div>
+
+      <!-- Modal for Add Product Form -->
+      <div id="add-Product-modal" class="modal">
+        <span id="close-add-Product-modal" class="close-modal-btn"
+          >&times;</span
+        >
+
+        <div id="add-Product-modal-content">
+          <h2>Add New Inventory Item</h2>
+
+          <form id="new-product-form">
+            <label for="categoryName">Category:</label>
+            <select id="categoryName" name="categoryName" required>
+              <option value="t_shirts">T-Shirts</option>
+              <option value="graphic_t_shirts">Graphic T-Shirts</option>
+              <option value="plain_t_shirts">Plain T-Shirts</option>
+              <option value="hoodies_sweatshirts">Hoodies & Sweatshirts</option>
+              <option value="accessories">Accessories</option>
+            </select>
+
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required />
+
+            <label for="productDescription">Product Description:</label>
+            <input
+              type="text"
+              id="productDescription"
+              name="productDescription"
+              required
+            />
+
+            <label for="unitPrice">Unit Price:</label>
+            <input type="number" id="unitPrice" name="unitPrice" required />
+
+            <label for="stockQuantity">Stock Quantity:</label>
+            <input
+              type="number"
+              id="stockQuantity"
+              name="stockQuantity"
+              required
+            />
+
+            <div class="multiple-input-fields">
+              <div>
+                <label for="restockThreshold">Restock Threshold:</label>
+                <input
+                  type="number"
+                  id="restockThreshold"
+                  name="restockThreshold"
+                />
+              </div>
+              <div>
+                <label for="restockQuantity">Restock Quantity:</label>
+                <input
+                  type="number"
+                  id="restockQuantity"
+                  name="restockQuantity"
+                />
+              </div>
+            </div>
+
+            <label for="imageUrl">Image URL:</label>
+            <input
+              type="file"
+              id="imageUrl"
+              name="imageUrl"
+              accept=".png, .jpg, .jpeg"
+            />
+
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color" />
+
+            <button type="submit" class="add-to-db">Add to Inventory</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- darken background when adding product  -->
+      <div id="add-Product-modal-overlay" class="modal-overlay"></div>
+
+      <script src="../js/inventory.js"></script>
+    </div>
+  </body>
+</html>
