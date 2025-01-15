@@ -1,4 +1,2 @@
 # TShirtDotCo
-ERP system
-
-Our company name is The Shirt District Co.
+This was our Senior Project Front End Application for our Company TShirtDotCo
